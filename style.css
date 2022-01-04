@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(231, 14, 14);
+}
+
+header h2{
+    color: whitesmoke;
+    font-size: 5rem;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    /*background-color: rgb(104, 255, 4);*/
+    height: 500px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+section .block1{
+    width: 40%;
+    height: 80%;
+    border-radius: 2%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+section .block1 .heading
+{
+    width: 50%;
+    margin: auto;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+section .block1 .text{
+    width: 100%;
+    margin: auto;
+    height: 60%;
+    /*background-color: violet;*/
+    padding-left: 15%;
+}
+
+section .block1 .text textarea{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    resize: none;
+    color: black;
+    font-size: 2rem;
+}
+
+section button{
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: greenyellow;
+    border-radius: 10%;
+    text-shadow: 2px 2px 2px black;
+    padding: 1%;
+    margin-left: 30%;
+    margin-bottom: 1%;
+}
+
+
+section .block2{
+    width: 40%;
+    height: 70%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2%;
+}
+section .block2 .heading
+{
+    width: 50%;
+    margin: auto;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+section .block2 .result
+{
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    margin-top: 2%;
+    color: rgb(116, 179, 23);
+    font-size: 1.5rem;
+    overflow-y: auto;
+    background-color: honeydew;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    background-size: contain;
+}
+
+footer p{
+    text-align: center;
+    font-size: 2rem;   
+    color: white; 
+}
+
+footer p span{
+    color: blue;
+}
+
+
+
+@media (max-width:906px){
+    header h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    section{
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 5%;
+    }
+
+    section .block1{
+        width: 70%;
+        height: 50%;
+        margin-bottom: 2%;
+    }
+
+    section .block2{
+        width: 70%;
+        height: 50%;
+    }
+    
+
+    section .block1 .heading{
+    font-size: 1.5rem;
+    }
+
+    section .block2 .heading{
+    font-size: 1.5rem;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 1.5rem;    
+    }
+
+
+}
+
+@media (max-width:356px){
+
+    section .block1{
+        width: 80%;
+        height: 30%;
+        margin-bottom: 1%;
+    }
+
+    section .block2{
+        width: 80%;
+        height:30%;
+    }
+    
+    section .block2 .heading{
+        font-size: 1rem;
+        }
+
+    section button{
+        font-size: 1.5rem;
+        padding: 1%;
+        margin-left: 30%;
+        font-size: 1rem;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 1rem;    
+    }
+}
